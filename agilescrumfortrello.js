@@ -268,13 +268,6 @@ AST = (function ( A ) {
 				// display List Story Points
 				currentListElement.parent().prepend('<small class="scrum-list-total' + cssStoryPoints + '"><span class="scrum-light">' + currentListDone.toFixed( storyPointDecimals ) + '/</span>' + currentListTotal.toFixed( storyPointDecimals ) + '</small>');
 
-				// display List progress bar
-				if ( currentListTotal > 0 )
-				{
-					bodyWidth = currentListDone / currentListTotal * 100;
-					currentListElement.parent('.list').prepend('<div class="scrum-list-progress"  style="background-color:' + bodyColor + ';width:' + ( bodyWidth <= 100 ? bodyWidth : 100 ) + '%"></div>');
-				}
-
 				// now reset it for the next one
 				currentListElement 	= false;
 				currentListDone 	= currentListTotal 	= 0;

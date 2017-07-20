@@ -4,6 +4,10 @@
 	"description": "Super-charge your Trello boards with Story Points, Projects and Progress bars",
 	"version": "1.4.4",
 	"author": "Xavi Esteve",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
 	"content_scripts": [
 		{
 			"matches": [
@@ -18,7 +22,7 @@
 			]
 		}
 	],
-	"manifest_version" : 2,
+	"manifest_version" : 3,
 	"icons": {
 		"16": "agilescrumfortrello-16.png",
 		"32": "agilescrumfortrello-32.png",
